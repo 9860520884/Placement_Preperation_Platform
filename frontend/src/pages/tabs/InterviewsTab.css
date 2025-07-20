@@ -1,0 +1,134 @@
+.interviews-tab {
+  padding: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.tab-header {
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #3f51b5;
+}
+
+.tab-subheader {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.interview-accordion {
+  margin-bottom: 15px !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: none !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.accordion-header {
+  background-color: #f5f7fa !important;
+  font-weight: 600 !important;
+}
+
+.accordion-content {
+  padding: 0 !important;
+}
+
+.resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.resource-card {
+  padding: 15px;
+  border-radius: 8px !important;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+.resource-icon {
+  background-color: #e3f2fd;
+  color: #3f51b5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-icon svg {
+  font-size: 20px !important;
+}
+
+.resource-info {
+  flex: 1;
+}
+
+.resource-info p {
+  color: #666;
+}
+
+.view-button {
+  text-transform: none !important;
+  border-radius: 20px !important;
+  border-color: #3f51b5 !important;
+  color: #3f51b5 !important;
+}
+
+.mock-interview-section {
+  margin-top: 30px;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.mock-interview-card {
+  padding: 25px;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #3f51b5 0%, #2196f3 100%) !important;
+  color: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.mock-text {
+  max-width: 600px;
+}
+
+.schedule-button {
+  background-color: white !important;
+  color: #3f51b5 !important;
+  font-weight: 600 !important;
+  padding: 10px 30px !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+}
+
+.schedule-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .resources-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .mock-text {
+    font-size: 0.9rem !important;
+  }
+}

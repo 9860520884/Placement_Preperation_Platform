@@ -1,0 +1,225 @@
+/* Base Styles */
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.5s ease;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, #3f51b5 0%, rgba(48, 63, 159, 0.9) 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+/* Logo Styles */
+.logo {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  background: linear-gradient(45deg, #ffffff 30%, rgba(255, 152, 0, 0.8) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: float 3s ease-in-out infinite;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Navigation Items */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button {
+  color: white !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+  padding: 10px 20px !important;
+  margin: 0 5px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.nav-button.active {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 0 0 2px white, 0 0 15px rgba(66, 165, 245, 0.5) !important;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* User Controls */
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notification-btn {
+  transition: all 0.3s ease !important;
+}
+
+.notification-btn:hover {
+  animation: pulse 0.5s ease;
+}
+
+.badge .MuiBadge-badge {
+  right: 5px;
+  top: 5px;
+  border: 2px solid #3f51b5;
+  animation: pulse 1.5s infinite;
+}
+
+.avatar-btn {
+  padding: 0 !important;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-avatar:hover {
+  transform: scale(1.1) rotate(5deg);
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* User Menu */
+.user-menu .MuiPaper-root {
+  border-radius: 12px !important;
+  margin-top: 8px !important;
+  min-width: 200px !important;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2) !important;
+  background: white !important;
+}
+
+.menu-item {
+  padding: 12px 16px !important;
+  transition: all 0.2s ease !important;
+}
+
+.menu-item:hover {
+  background-color: rgba(63, 81, 181, 0.1) !important;
+  transform: translateX(5px) !important;
+}
+
+.menu-icon {
+  margin-right: 12px !important;
+}
+
+.menu-divider {
+  margin: 8px 0 !important;
+}
+
+/* Content Area */
+.dashboard-content {
+  flex: 1;
+  padding: 24px 0;
+}
+
+.content-card {
+  border-radius: 16px !important;
+  padding: 32px !important;
+  margin: 32px 0 !important;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1) !important;
+  background: white !important;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.4s ease !important;
+}
+
+.content-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.2) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .toolbar {
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .nav-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px 0;
+  }
+  
+  .user-controls {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-button {
+    padding: 8px 12px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .content-card {
+    padding: 16px !important;
+  }
+}
+.navbar {
+  background-color: #1e1e2f;
+}
+
+.nav-button {
+  color: white;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.nav-button.active {
+  border-bottom: 2px solid #ff9800;
+  color: #ff9800;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content-card {
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #fff;
+}

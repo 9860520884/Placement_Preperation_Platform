@@ -1,0 +1,91 @@
+.mentorship-section {
+  padding: 40px 30px;
+  background: linear-gradient(to bottom, #eef2f3, #ffffff);
+  border-radius: 12px;
+}
+
+.mentorship-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mentorship-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.mentorship-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.mentorship-card {
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.mentorship-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.mentorship-glow::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #dbeafe, transparent 70%);
+  opacity: 0.15;
+  z-index: 0;
+  animation: rotateGlow 6s linear infinite;
+}
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1e293b;
+  position: relative;
+  z-index: 1;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-button {
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.counseling-card .card-button {
+  background-color: #f43f5e;
+  color: white;
+}
+
+.counseling-card .card-button:hover {
+  background-color: #e11d48;
+}

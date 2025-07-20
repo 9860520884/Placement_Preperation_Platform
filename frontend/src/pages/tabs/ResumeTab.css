@@ -1,0 +1,221 @@
+/* ResumeTab.css */
+
+/* Main container styles */
+.resume-tab {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Header styles */
+.tab-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.tab-subheader {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Stepper styles */
+.resume-stepper {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-label .MuiStepLabel-label {
+  font-weight: 500;
+}
+
+.step-label.Mui-completed .MuiStepLabel-label {
+  color: #4caf50;
+}
+
+.step-label.Mui-active .MuiStepLabel-label {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+/* Form section styles */
+.form-section {
+  padding: 1rem 0;
+}
+
+.multi-field-group {
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.multi-field-group:hover {
+  box-shadow: 0 0 0 1px #1976d2;
+}
+
+/* Button styles */
+.stepper-actions {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.back-button {
+  color: #666;
+}
+
+.next-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.next-button:hover {
+  background-color: #1565c0;
+}
+
+.download-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.download-button:hover {
+  background-color: #388e3c;
+}
+
+/* Preview section styles */
+.preview-section {
+  text-align: center;
+}
+
+.resume-preview {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Template section styles */
+.templates-section {
+  margin-top: 2rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.templates-grid {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  overflow-x: auto;
+}
+
+.template-card {
+  min-width: 200px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.template-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resume-tab {
+    padding: 1rem;
+  }
+  
+  .resume-stepper {
+    padding: 1rem;
+  }
+  
+  .stepper-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .back-button, .next-button {
+    width: 100%;
+  }
+  
+  .templates-grid {
+    flex-direction: column;
+  }
+  
+  .template-card {
+    width: 100%;
+  }
+}
+
+/* Animation for form sections */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-section {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Chip styles for skills */
+.MuiChip-root {
+  margin: 0.2rem;
+}
+
+/* Error message styles */
+.MuiFormHelperText-root.Mui-error {
+  color: #f44336;
+  margin-left: 0;
+}
+
+/* Divider styles */
+.MuiDivider-root {
+  margin: 1.5rem 0;
+}
+
+/* List styles in preview */
+.MuiList-root {
+  padding-top: 0;
+}
+
+.MuiListItem-root {
+  padding: 0.25rem 0;
+}
+
+/* Text field focus styles */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+  border-width: 1px;
+}
+
+/* Required field asterisk color */
+.MuiFormLabel-asterisk {
+  color: #f44336;
+}
+
+/* Snackbar position */
+.MuiSnackbar-root {
+  bottom: 20px;
+}
